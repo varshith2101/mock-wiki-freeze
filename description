@@ -15,7 +15,7 @@
     <link href="static/styling.css" rel="stylesheet">
     <script defer src="static/script.js"></script>
 
-    <title>Home | MOCK-WIKI-FREEZE </title>
+    <title>Project Description | MOCK-WIKI-FREEZE </title>
 
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -109,9 +109,7 @@
 
     
 
-<h1>
-    HOME - give content more priority
-</h1>
+
 
 
 
