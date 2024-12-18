@@ -1,0 +1,24 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  FREEZER_DESTINATION: "public"
+
+build:
+  stage: build
+  image: python:3.10
+  script:
+    - pip install -r dependencies.txt
+    - flask freeze
+  artifacts:
+    paths:
+      - public/
+
+pages:
+  stage: deploy
+  script:
+    - mv public/ public-html/
+  artifacts:
+    paths:
+      - public-html/
