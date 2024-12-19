@@ -24,7 +24,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install --no-cache-dir flask flask-freeze
           pip install --no-cache-dir -r dependencies.txt
 
       # Build the static site with Flask-Freeze
@@ -39,3 +38,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build  # Match Flask-Freeze's output directory
+
+ 
